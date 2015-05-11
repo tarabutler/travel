@@ -1,0 +1,14 @@
+<h1>Welcome to my totally sick travel site</h1>
+<p>Let me tell you about the places I might never get to see in this lifetime.</p>
+
+<p><%= @homeland %></p>
+
+<ul>
+<% @places.each do |x| %>
+	<li><%= x %></li>
+<% end %>
+</ul>
+
+<% @images.each do |image| %>
+	<%= image_tag image %><br/>
+<%end%>
