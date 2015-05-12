@@ -1,8 +1,9 @@
 <h1>Welcome to my totally sick travel site</h1>
 <p>Let me tell you about the places I might never get to see in this lifetime.</p>
 
-<p><%= @homeland %></p>
+<p>I am from <%= @homeland %>.</p>
 
+<p>I would like to visit:</p>
 <ul>
 <% @places.each do |x| %>
 	<li><%= x %></li>
@@ -10,5 +11,5 @@
 </ul>
 
 <% @images.each do |image| %>
-	<%= image_tag image %><br/>
+	<%= image_tag image, class: "img-responsive" %><br/>
 <%end%>
